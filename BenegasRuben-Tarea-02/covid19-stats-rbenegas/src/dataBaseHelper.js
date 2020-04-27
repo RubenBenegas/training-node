@@ -17,7 +17,7 @@ admin.initializeApp({
 var db = admin.database();
 
 async function UseApiCounter(){
-    db.ref("visits").once("value", (snapshot) => {
+    await db.ref("visits").once("value", (snapshot) => {
         try {
           const data = snapshot.val();
           
@@ -46,9 +46,6 @@ async function UseApiCounter(){
           }
         } catch (error) {
           console.log(error);
-        }
-        finally{
-          db.goOffline();
         }
       });
 }
