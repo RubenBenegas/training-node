@@ -11,7 +11,7 @@ async function Main() {
 console.log(`
 ===============================================================
 ||                                                           ||
-|| Number of visits to the Api                               ||
+|| Visitor counter                                           ||
 ||                                                           ||
 ===============================================================`);
   
@@ -19,6 +19,8 @@ console.log(`
 
 console.log(`
 ===============================================================
+||                                                           ||
+|| **********       CORONAVIRUS STATISTICS       **********  ||
 ||                                                           ||
 || Select the type of statistics you want to consult:        ||
 ||    1. Global Statistics                                   ||
