@@ -6,8 +6,6 @@ var visit = {
   useCount: 1,
 };
 
-var visits = [];
-
 var serviceAccount = require("./training-node-db-firebase-adminsdk-rp1w1-39614dadba.json");
 
 admin.initializeApp({
@@ -64,8 +62,8 @@ async function ViewVisits(){
         console.log(error);
       }
       finally{
-        //db.goOffline();
+        db.goOffline();
       }
     });
 }
-module.exports = {visits, UseApiCounter, ViewVisits}
+module.exports = {UseApiCounter, ViewVisits}
