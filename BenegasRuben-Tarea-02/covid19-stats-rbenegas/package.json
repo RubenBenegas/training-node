@@ -15,7 +15,7 @@
   "author": "Ruben Benegas",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "console-read-write": "^0.1.1",
     "firebase-admin": "^8.11.0"
   }
